@@ -45,6 +45,6 @@ app.all(/.*/, (req, res) => {
   })
 })
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log('伺服器啟動')
 })
