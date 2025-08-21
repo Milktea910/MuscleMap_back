@@ -7,6 +7,7 @@ import userRouter from './routes/user.js'
 import inbodyRouter from './routes/inbody.js'
 import exerciseRouter from './routes/exercise.js'
 import routineRouter from './routes/routine.js'
+import articleRouter from './routes/article.js'
 import './passport.js'
 
 mongoose
@@ -36,6 +37,7 @@ app.use('/user', userRouter)
 app.use('/inbody', inbodyRouter)
 app.use('/exercise', exerciseRouter)
 app.use('/routine', routineRouter)
+app.use('/article', articleRouter)
 
 // 處理未定義的路由
 app.all(/.*/, (req, res) => {
